@@ -1,4 +1,3 @@
-# Avengers Endgame 
 _Games Engines 2 Assignment in Final Year of Bachelor of Computer Science_
 
 **Name:** Bianca Claudette Palileo
@@ -7,21 +6,18 @@ _Games Engines 2 Assignment in Final Year of Bachelor of Computer Science_
 
 **Class Group:** DT228/4 or TU856/4
 
+# Avengers Endgame
+
 ## Description
-A recreation of the Avengers Endgame final battle scene in Unity with autonomous agents and 3D models. 
+- A recreation of the Avengers Endgame final battle scene in Unity with autonomous agents and 3D models. 
+- There have been adjustments in the storyline and scenes due to unavailable 3D models and time.
+- The spaceships and models apply behaviours such as path following, steering, banking, fleeing, pursue and offset pursue; and animations, written and applied in code.
+- The spaceships were created in Blender, the models were taken from Sketchfab and RenderHub, and the animations from Mixamo.
 
-There have been adjustments in the storyline and scenes due to unavailable 3D models and time.
-
-The spaceships and models apply behaviours such as path following, steering, banking, fleeing, pursue and offset pursue; and animations, written and applied in code.
-
-The sequence manager handles the sequences.
-
-The spaceships were created in Blender, the models were taken from Sketchfab and the animations from Mixamo.
-
-## Video
+## Videos
 **Source movie:** Avengers Endgame
 
-Source videos:
+**Source videos:**
 
 [![Avengers Assemble Scene](http://img.youtube.com/vi/dE1P4zDhhqw/0.jpg)](http://www.youtube.com/watch?v=dE1P4zDhhqw "Captain America 'Avengers Assemble' Scene - Portal Scene - Avengers : Endgame (2019) Scene")
 [![Female Avengers Unite Scene](http://img.youtube.com/vi/L7Y0ucw7bGk/0.jpg)](http://www.youtube.com/watch?v=L7Y0ucw7bGk "Female Avengers Unite Scene - AVENGERS 4: ENDGAME (2019) Movie Clip")
@@ -54,5 +50,43 @@ Source videos:
 25. Flash white to black.
 
 ## Models
+### SketchFab
+|   |  |   |  |
+| ------------- | ------------- | ------------- | ------------- |
+| Ironman  | Thor  | Captain America  | Thanos  |
+| Doctor Strange  | Black Panther  | Nebula  | Spiderman  |
+| Starlord - Peter Quill  | Hulk  | Ironwoman - Pepper Potts  | Wanda  |
+| Captain Marvel  | Thor's Hammer - Mjolnir  | Thor's Axe - Stormbreaker  |   |
+- Ironman
+- Thor
+- Captain America
+- Thanos
+- Doctor Strange
+- Black Panther
+- Nebula
+- Spiderman
+- Starlord - Peter Quill
+- Hulk
+- Ironwoman
+- Wanda
+- Captain Marvel
+- Thor's Hammer - Mjolnir
+- Thor's Axe - Stormbreaker 
+
+### RenderHub
+
+- Outriders
+
+
+### Blender - Created by Me
+- Sanctuary II (Thanos' main ship)
+- Thanos' outrider-full ship
+- Thanos' whale ships/monster
+- Avengers' spaceships 2x
 
 ## Resources
+- Assets
+  - [**Sketchfab**](https://sketchfab.com/feed)
+  - [**RenderHub**](https://www.renderhub.com)
+  - [**Blender**](https://www.blender.org/)
+  - [Skybox](https://assetstore.unity.com/packages/2d/textures-materials/sky/starfield-skybox-92717)
