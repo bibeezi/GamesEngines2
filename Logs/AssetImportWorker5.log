@@ -1,0 +1,389 @@
+Using pre-set license
+Built from '2021.2/staging' branch; Version is '2021.2.8f1 (d0e5f0a7b06a) revision 13690352'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22000) 64bit Core' Language: 'en' Physical Memory: 16198 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.2.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker5
+-projectPath
+C:/Users/Bianca Palileo/Desktop/GE2Assignment
+-logFile
+Logs/AssetImportWorker5.log
+-srvPort
+58272
+Successfully changed project path to: C:/Users/Bianca Palileo/Desktop/GE2Assignment
+C:/Users/Bianca Palileo/Desktop/GE2Assignment
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 21.82 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.2.8f1 (d0e5f0a7b06a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Bianca Palileo/Desktop/GE2Assignment/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2070 (ID=0x1f14)
+    Vendor:   NVIDIA
+    VRAM:     8031 MB
+    Driver:   30.0.15.1165
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.8f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56996
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003376 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 22.27 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.447 seconds
+Domain Reload Profiling:
+	ReloadAssembly (447ms)
+		BeginReloadAssembly (51ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (334ms)
+			LoadAssemblies (50ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (83ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (22ms)
+			SetupLoadedEditorAssemblies (189ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (22ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (117ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002704 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.704 seconds
+Domain Reload Profiling:
+	ReloadAssembly (705ms)
+		BeginReloadAssembly (86ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (538ms)
+			LoadAssemblies (49ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (149ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (266ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (44ms)
+				ProcessInitializeOnLoadAttributes (184ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.27 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1525 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (47.8 KB). Loaded Objects now: 2006.
+Memory consumption went from 80.7 MB to 80.7 MB.
+Total: 2.208300 ms (FindLiveObjects: 0.133500 ms CreateObjectMapping: 0.057800 ms MarkObjects: 1.961200 ms  DeleteObjects: 0.054900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1395695.829528 seconds.
+  path: Assets/Models/Starlord/source/model/model/textures/Body_Shader_AO.jpg
+  artifactKey: Guid(78986f35610304c4cade5ed8dee52d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Starlord/source/model/model/textures/Body_Shader_AO.jpg using Guid(78986f35610304c4cade5ed8dee52d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a4e5ca14f00c07e74af920e6ee2e29b') in 0.075446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/Starlord/source/model/model/textures/Jacket_Shader_emissive.jpg
+  artifactKey: Guid(dad018fb2d248e44595b6b3560426c9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Starlord/source/model/model/textures/Jacket_Shader_emissive.jpg using Guid(dad018fb2d248e44595b6b3560426c9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db70314231fb63d6ca10cdaa6848dc00') in 0.012448 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Models/Starlord/source/model/model/textures/Face_Shader_AO.jpg
+  artifactKey: Guid(60ae5af2f0f8f474ba7f33f6514c35bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Starlord/source/model/model/textures/Face_Shader_AO.jpg using Guid(60ae5af2f0f8f474ba7f33f6514c35bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89db6607790d9daf1a077518698ab85c') in 0.013590 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/Starlord/source/model/model/textures/Jacket_Shader_normal.png
+  artifactKey: Guid(c7ed76084a3fd0140b443896e6d92dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Starlord/source/model/model/textures/Jacket_Shader_normal.png using Guid(c7ed76084a3fd0140b443896e6d92dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef76c19082b3aa89293dae00b4c392b5') in 0.016822 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/Starlord/source/model/model/textures/Jacket_Shader_roughness.jpg
+  artifactKey: Guid(dd24b919a8916564fae13c6be1d57bce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Starlord/source/model/model/textures/Jacket_Shader_roughness.jpg using Guid(dd24b919a8916564fae13c6be1d57bce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65b887640632338d9c85fe3f4bc90425') in 0.013708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/Starlord/source/model/model/textures/Misc_Shader_emissive.jpg
+  artifactKey: Guid(dee6d5c03f2aa284488fa4fcc72e01ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Starlord/source/model/model/textures/Misc_Shader_emissive.jpg using Guid(dee6d5c03f2aa284488fa4fcc72e01ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4256f51d1e1828e35597803add62ff1d') in 0.008396 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Models/Starlord/source/model/model/textures/Face_Shader_metallic.jpg
+  artifactKey: Guid(56eeeec5bc56dda46a6d67e106c8130f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Starlord/source/model/model/textures/Face_Shader_metallic.jpg using Guid(56eeeec5bc56dda46a6d67e106c8130f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dee9ee095a7ad4f9eca5b22db5e40e26') in 0.011739 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/Starlord/source/model/model/textures/Body_Shader_normal.png
+  artifactKey: Guid(5aff0fb5a4f499946b988f240b95e4fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Starlord/source/model/model/textures/Body_Shader_normal.png using Guid(5aff0fb5a4f499946b988f240b95e4fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd48ffdf64c9de2308748df33f46d8444') in 0.013216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Models/Starlord/source/model/model/textures/Jacket_Shader_AO.jpg
+  artifactKey: Guid(4d80e06a6ca09934baa5c4e3e3095a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Starlord/source/model/model/textures/Jacket_Shader_AO.jpg using Guid(4d80e06a6ca09934baa5c4e3e3095a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99803271ec057537ede9a743b69a872d') in 0.014502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Models/Starlord/source/model/model/textures/Face_Shader_opacity.jpg
+  artifactKey: Guid(4e9ec5a8e3c3b2b46b7fbee9d07f32e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Starlord/source/model/model/textures/Face_Shader_opacity.jpg using Guid(4e9ec5a8e3c3b2b46b7fbee9d07f32e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82a73a1743966ef09306ec23142dd8ae') in 0.007438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Models/Starlord/source/model/model/textures/Misc_Shader_metallic.jpg
+  artifactKey: Guid(35fb1f6b11ddd764496de798500e4b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Starlord/source/model/model/textures/Misc_Shader_metallic.jpg using Guid(35fb1f6b11ddd764496de798500e4b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '456f8506e5d6b033748b16e766489782') in 0.008211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Models/Starlord/source/model/model/textures/Body_Shader_opacity.jpg
+  artifactKey: Guid(cc217a75446f6a646a9fe84b89ff43f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Starlord/source/model/model/textures/Body_Shader_opacity.jpg using Guid(cc217a75446f6a646a9fe84b89ff43f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f6c6eaab4670e11cb3fedfb2bd749de') in 0.015917 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/Starlord/source/model/model/textures/Face_Shader_emissive.jpg
+  artifactKey: Guid(6afc3c46071d01e489fbfddfc9032631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Starlord/source/model/model/textures/Face_Shader_emissive.jpg using Guid(6afc3c46071d01e489fbfddfc9032631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '533bf3da5c01712388c173d49a9575f0') in 0.007188 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 246.331757 seconds.
+  path: Assets/Models/Nebula/n1.png
+  artifactKey: Guid(402bc0e4a54972448bd347ba179340de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Nebula/n1.png using Guid(402bc0e4a54972448bd347ba179340de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '865a333245e0b75755e2190f0e0836c1') in 0.018928 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Models/Nebula/sv_nebula03_wp02_sp.png
+  artifactKey: Guid(c4eb608d1b9bab34085c47f62bbe10f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Nebula/sv_nebula03_wp02_sp.png using Guid(c4eb608d1b9bab34085c47f62bbe10f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28e7b68691ce72d117be13069ec86f1a') in 0.016613 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Models/Nebula/sv_nebula03_02_sp.png
+  artifactKey: Guid(b44f32eb413b715459956fcbcb555b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Nebula/sv_nebula03_02_sp.png using Guid(b44f32eb413b715459956fcbcb555b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd20bc9fad5d5c3b4c9192a2ce686cd2') in 0.018088 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/Nebula/sv_nebula03_02.png
+  artifactKey: Guid(7214a6de8bfa77b4bbf55318a40b057a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Nebula/sv_nebula03_02.png using Guid(7214a6de8bfa77b4bbf55318a40b057a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79dd59e967ab8d28a31d84d993b03823') in 0.017960 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/Nebula/Nebula_wp_sp.png
+  artifactKey: Guid(3b582bedc0f687d4e8f8c086bcb42612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Nebula/Nebula_wp_sp.png using Guid(3b582bedc0f687d4e8f8c086bcb42612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c5d30353733bde89064ccce74205403') in 0.013687 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/Nebula/nw2.png
+  artifactKey: Guid(00b94ec8e5795a040969266e0ea4876e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Nebula/nw2.png using Guid(00b94ec8e5795a040969266e0ea4876e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f48cb8cc7c7405bcb1d475129e089d8') in 0.015621 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/Nebula/Nebula_wp.png
+  artifactKey: Guid(7e167bf44c4a60c49a67c331e4552225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Nebula/Nebula_wp.png using Guid(7e167bf44c4a60c49a67c331e4552225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '537956960f7679bc7324c6c4614e8fe9') in 0.015471 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/Nebula/sv_nebula03_01.png
+  artifactKey: Guid(e0326cdf2da1c8c44b2240420c78a161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Nebula/sv_nebula03_01.png using Guid(e0326cdf2da1c8c44b2240420c78a161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab32fb98484a338b637b867f2a040d87') in 0.014039 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Models/Nebula/n2.png
+  artifactKey: Guid(789fc864297ada34e8261f134fefedfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Nebula/n2.png using Guid(789fc864297ada34e8261f134fefedfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22b21339eb0dc757a00ad1db57ef16e6') in 0.015067 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/Nebula/nww.png
+  artifactKey: Guid(c2d82299c353b3f439bb88070980486c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Nebula/nww.png using Guid(c2d82299c353b3f439bb88070980486c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c08c89d9523933571e5823fb85e1636') in 0.014517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/Nebula/sv_nebula03_01_sp.png
+  artifactKey: Guid(5349886c4e7698943b99c25b78dba0f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Nebula/sv_nebula03_01_sp.png using Guid(5349886c4e7698943b99c25b78dba0f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65ce2d4e363746d96cb5e3f7d440cfd0') in 0.013318 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.927804 seconds.
+  path: Assets/Models/Nebula/defaultMat.mat
+  artifactKey: Guid(71d92fb08ab4a9445a084ebbf7bc62ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Nebula/defaultMat.mat using Guid(71d92fb08ab4a9445a084ebbf7bc62ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2df6ec7c7ceb0fc22888d14129a5e0e1') in 0.103524 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 233.311935 seconds.
+  path: Assets/Models/BlackPanther/0.fbx
+  artifactKey: Guid(a20f244eb9fc63b499d63bdcd2b870f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/BlackPanther/0.fbx using Guid(a20f244eb9fc63b499d63bdcd2b870f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20e7dbba167b59e556d31a7939b015c2') in 0.210563 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/BlackPanther/gray_m.tga.002.tga
+  artifactKey: Guid(3a6371e74837f9744af73cae40bcf956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/BlackPanther/gray_m.tga.002.tga using Guid(3a6371e74837f9744af73cae40bcf956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed1371c062108f1637273829f062cf07') in 0.014033 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/BlackPanther/0.obj
+  artifactKey: Guid(3aa5651f6f03b12449b2746b0bfa3f48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/BlackPanther/0.obj using Guid(3aa5651f6f03b12449b2746b0bfa3f48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b29c7716b89f8c038d791674139b762') in 0.058457 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/BlackPanther/eye_env.tga.002.tga
+  artifactKey: Guid(e869475bad5097940954be91612fef3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/BlackPanther/eye_env.tga.002.tga using Guid(e869475bad5097940954be91612fef3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aba0fca4bdd7e99e47a00088144b63f') in 0.012980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/BlackPanther/flat_ao.tga.002.tga
+  artifactKey: Guid(4a769b0cce0d8f840bc9dd685774d18d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/BlackPanther/flat_ao.tga.002.tga using Guid(4a769b0cce0d8f840bc9dd685774d18d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8e9eaaff045d86f01cb0a33dd360cdc') in 0.012203 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Models/BlackPanther/body_n.tga
+  artifactKey: Guid(f3355655259bb5d4f935c64168250d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/BlackPanther/body_n.tga using Guid(f3355655259bb5d4f935c64168250d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea71c341fad326728fce9f41d511a454') in 0.013097 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Models/BlackPanther/body_d.tga
+  artifactKey: Guid(f3cddf98f5db7db4a90f8b58d9fd5f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/BlackPanther/body_d.tga using Guid(f3cddf98f5db7db4a90f8b58d9fd5f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bdb76612eac65b2d908bdb1403860c3') in 0.012118 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Models/BlackPanther/body_s.tga.003.tga
+  artifactKey: Guid(1bf2cd4bcc2c77242a6cd3b8e7a0e771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/BlackPanther/body_s.tga.003.tga using Guid(1bf2cd4bcc2c77242a6cd3b8e7a0e771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b0e106c73c24b521232f3235b9049fd') in 0.012402 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Models/BlackPanther/gray_m.tga
+  artifactKey: Guid(47da074483a2a9d47b1893ce156741c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/BlackPanther/gray_m.tga using Guid(47da074483a2a9d47b1893ce156741c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21fce2381be72a97a8796c391801acb7') in 0.010617 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/BlackPanther/body_d.tga.003.tga
+  artifactKey: Guid(303c331391a00154c99c22adb0c02165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/BlackPanther/body_d.tga.003.tga using Guid(303c331391a00154c99c22adb0c02165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9040fcbd752d31fabcb9a4e5075a0d02') in 0.011799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Models/BlackPanther/Eye_Env.tga
+  artifactKey: Guid(029c85f261ef3934dabf605a6a668f93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/BlackPanther/Eye_Env.tga using Guid(029c85f261ef3934dabf605a6a668f93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b537b79a8255847a9c1cd8d3c8e983b8') in 0.014888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/BlackPanther/gray_env.tga.002.tga
+  artifactKey: Guid(95da56031c4ae6544bbfe2ff1fd69785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/BlackPanther/gray_env.tga.002.tga using Guid(95da56031c4ae6544bbfe2ff1fd69785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '475eaa59b47f84d83a5bfa863ddbb013') in 0.017471 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/BlackPanther/body_n.tga.003.tga
+  artifactKey: Guid(723f3b1710cd7db46888dbad6052315f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/BlackPanther/body_n.tga.003.tga using Guid(723f3b1710cd7db46888dbad6052315f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46d801e75238c87b797ff7621753c2a3') in 0.016556 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

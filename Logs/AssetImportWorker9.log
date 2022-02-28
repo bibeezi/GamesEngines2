@@ -1,0 +1,299 @@
+Using pre-set license
+Built from '2021.2/staging' branch; Version is '2021.2.8f1 (d0e5f0a7b06a) revision 13690352'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22000) 64bit Core' Language: 'en' Physical Memory: 16198 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.2.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker9
+-projectPath
+C:/Users/Bianca Palileo/Desktop/GE2Assignment
+-logFile
+Logs/AssetImportWorker9.log
+-srvPort
+58272
+Successfully changed project path to: C:/Users/Bianca Palileo/Desktop/GE2Assignment
+C:/Users/Bianca Palileo/Desktop/GE2Assignment
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 25.87 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.2.8f1 (d0e5f0a7b06a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Bianca Palileo/Desktop/GE2Assignment/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2070 (ID=0x1f14)
+    Vendor:   NVIDIA
+    VRAM:     8031 MB
+    Driver:   30.0.15.1165
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.8f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56504
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003415 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 21.45 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.512 seconds
+Domain Reload Profiling:
+	ReloadAssembly (512ms)
+		BeginReloadAssembly (58ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (387ms)
+			LoadAssemblies (56ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (94ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (227ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (22ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (141ms)
+				ProcessInitializeOnLoadMethodAttributes (51ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002687 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.687 seconds
+Domain Reload Profiling:
+	ReloadAssembly (688ms)
+		BeginReloadAssembly (89ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (520ms)
+			LoadAssemblies (52ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (156ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (236ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (36ms)
+				ProcessInitializeOnLoadAttributes (165ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1525 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (48.3 KB). Loaded Objects now: 2006.
+Memory consumption went from 80.8 MB to 80.7 MB.
+Total: 2.255900 ms (FindLiveObjects: 0.171900 ms CreateObjectMapping: 0.062600 ms MarkObjects: 1.943000 ms  DeleteObjects: 0.077100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1396625.700059 seconds.
+  path: Assets/Models/Nebula/n1 1.png
+  artifactKey: Guid(e99b9268eead70349937785861a5e6cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Nebula/n1 1.png using Guid(e99b9268eead70349937785861a5e6cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '926a391cfe15964b198b30bb0088f36a') in 0.087217 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/Nebula/sv_nebula03_wp02 1.png
+  artifactKey: Guid(1c7ba28f2e9f42242a9ec6e6158c773e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Nebula/sv_nebula03_wp02 1.png using Guid(1c7ba28f2e9f42242a9ec6e6158c773e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbddc2088a1bbc5f8f3283f66ec9ff89') in 0.022947 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Models/Nebula/sv_nebula03_01_sp 1.png
+  artifactKey: Guid(abdb29770f190d44ea01c5368d650c18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Nebula/sv_nebula03_01_sp 1.png using Guid(abdb29770f190d44ea01c5368d650c18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66e0985efe1b4cb7439b7ba86c038a9c') in 0.017709 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/Nebula/sv_nebula03_01 1.png
+  artifactKey: Guid(4853383287bcc944fa0a0bd9dc6f3a77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Nebula/sv_nebula03_01 1.png using Guid(4853383287bcc944fa0a0bd9dc6f3a77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b01e4727714a474f9def1bbf05a4027e') in 0.017183 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Models/Nebula/sv_nebula03_wp02_sp 1.png
+  artifactKey: Guid(6c9dfe0cc7eed4f41a0b18ff229b1d36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Nebula/sv_nebula03_wp02_sp 1.png using Guid(6c9dfe0cc7eed4f41a0b18ff229b1d36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20afb8b92c1a0d3bdc5116f4ca755ce3') in 0.013300 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/Nebula/sv_nebula03_02 1.png
+  artifactKey: Guid(5795b4c55a058454aa60a9270cdccd09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Nebula/sv_nebula03_02 1.png using Guid(5795b4c55a058454aa60a9270cdccd09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f85a68a30de4ea6e87c98ab13cf39eb0') in 0.014054 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 56.680881 seconds.
+  path: Assets/Starfield Skybox/Demo/Textures/Front_Tex.png
+  artifactKey: Guid(a5e005e6ff4298340b2ff009a5991908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Starfield Skybox/Demo/Textures/Front_Tex.png using Guid(a5e005e6ff4298340b2ff009a5991908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '252c8f4e844e7a4f27e97ff6afdddb11') in 0.086635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Starfield Skybox/Demo/Textures/Right_Tex.png
+  artifactKey: Guid(411c36f0804e8c248a3f6470ca50cd85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Starfield Skybox/Demo/Textures/Right_Tex.png using Guid(411c36f0804e8c248a3f6470ca50cd85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7f8c78b165ee4cb20017b2eb8b0aa22') in 0.060380 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 124.437191 seconds.
+  path: Assets/Models/Nebula/Nebula.mat
+  artifactKey: Guid(b4e376fcc807dd240b5aa76189aab491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Nebula/Nebula.mat using Guid(b4e376fcc807dd240b5aa76189aab491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ec32b8d00e7ae7cda3ea9a188f5c4bd') in 0.083006 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 103.772674 seconds.
+  path: Assets/Models/Starlord/textures/Body_Shader_AO.jpg
+  artifactKey: Guid(8c39beb8d9d0db6499efc58780142311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Starlord/textures/Body_Shader_AO.jpg using Guid(8c39beb8d9d0db6499efc58780142311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2628e8046b7eb8afe69dd08dd37900d3') in 0.017280 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/Starlord/textures/Misc_Shader_metallic.jpg
+  artifactKey: Guid(b7df269408172ea4694193dbc5c543bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Starlord/textures/Misc_Shader_metallic.jpg using Guid(b7df269408172ea4694193dbc5c543bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b30a913c357abb527653105a0f80bbdf') in 0.011989 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Models/Starlord/textures/Jacket_Shader_AO.jpg
+  artifactKey: Guid(2272fa13976547643b0280bc2e43ecba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Starlord/textures/Jacket_Shader_AO.jpg using Guid(2272fa13976547643b0280bc2e43ecba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2fbac36cfdf46919037c3f0aab120b6') in 0.014719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/Starlord/textures/Jacket_Shader_opacity.jpg
+  artifactKey: Guid(3fae5396cfc09ff4e950e1a4dcf3feb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Starlord/textures/Jacket_Shader_opacity.jpg using Guid(3fae5396cfc09ff4e950e1a4dcf3feb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51226c4a3b7f5c2280dbac1df61bd240') in 0.011959 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/Starlord/textures/Jacket_Shader_metallic.jpg
+  artifactKey: Guid(a9cf68a13be244e4d82b25fe841625ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Starlord/textures/Jacket_Shader_metallic.jpg using Guid(a9cf68a13be244e4d82b25fe841625ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b40849f29e3e8118ffa8a645ebf0c0c1') in 0.010990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/Starlord/textures/Body_Shader_metallic.jpg
+  artifactKey: Guid(b6f0eb24bb6804543b06fd3a3cc460e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Starlord/textures/Body_Shader_metallic.jpg using Guid(b6f0eb24bb6804543b06fd3a3cc460e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f630293f6121ecff06a9991b9267f9f') in 0.010673 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Models/Starlord/textures/Face_Shader_emissive.jpg
+  artifactKey: Guid(58eaebf67ddf86c408743567d903fc3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Starlord/textures/Face_Shader_emissive.jpg using Guid(58eaebf67ddf86c408743567d903fc3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa79cdd8dc20e2f37f8daebb8df9fabb') in 0.008146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Models/Starlord/textures/Body_Shader_emissive.jpg
+  artifactKey: Guid(ce90c05851a4218438ae3cfb22e02cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Starlord/textures/Body_Shader_emissive.jpg using Guid(ce90c05851a4218438ae3cfb22e02cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3be302dcb5bd0fc70327a68984fdc957') in 0.012250 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/Starlord/textures/Misc_Shader_opacity.jpg
+  artifactKey: Guid(dc350f6249ca3aa4e9cb969636dafef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Starlord/textures/Misc_Shader_opacity.jpg using Guid(dc350f6249ca3aa4e9cb969636dafef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebd5c4c482daa39fd8a859105d29730c') in 0.008742 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/Starlord/textures/Face_Shader_metallic.jpg
+  artifactKey: Guid(30cc20c29540c414ca9cc18691443ba9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Starlord/textures/Face_Shader_metallic.jpg using Guid(30cc20c29540c414ca9cc18691443ba9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be68eebdb530a5b4edbb03cfc3a5b1b0') in 0.011707 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/Starlord/textures/Face_Shader_AO.jpg
+  artifactKey: Guid(68b17986a046084479f2ef52b26a331f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Starlord/textures/Face_Shader_AO.jpg using Guid(68b17986a046084479f2ef52b26a331f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1455ce0250cb9b268edeb954c59aeef') in 0.015656 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/Starlord/textures/Jacket_Shader_roughness.jpg
+  artifactKey: Guid(953ed16867b6f7c48be13ee01ee26d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Starlord/textures/Jacket_Shader_roughness.jpg using Guid(953ed16867b6f7c48be13ee01ee26d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c787d69b2b04558bd09d0333e0bd001') in 0.013942 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/Starlord/textures/Body_Shader_opacity.jpg
+  artifactKey: Guid(0de980527dd3b9345b186d4d3c83d0a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Starlord/textures/Body_Shader_opacity.jpg using Guid(0de980527dd3b9345b186d4d3c83d0a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3a4b97174baccdaf54d62f4bde9e83f') in 0.008122 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Models/Starlord/textures/Misc_Shader_AO.jpg
+  artifactKey: Guid(6888e80c8af7ae043a3fa2b7d8290ad9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Starlord/textures/Misc_Shader_AO.jpg using Guid(6888e80c8af7ae043a3fa2b7d8290ad9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4be1a5939686ba0293a48e2de100108') in 0.014041 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

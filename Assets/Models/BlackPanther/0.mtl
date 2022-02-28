@@ -1,0 +1,60 @@
+# Blender MTL File: 'ModelRenderLighting.blend'
+# Material Count: 4
+
+newmtl 25_body_0.1_0_0.002
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.441739 0.731241 0.773615
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 1
+map_Kd body_d.tga
+map_Bump body_n.tga
+map_Ks body_s.tga
+map_d body_d.tga
+
+newmtl 25_eyes_0.1_0_0.012
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.691341 0.638711 0.413166
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 1
+map_Kd body_d.tga
+map_Bump body_n.tga
+map_Ks body_s.tga
+map_d body_d.tga
+
+newmtl 27_eyesenv_1_0_0.012
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.736068 0.700398 0.776403
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 1
+map_Kd body_d.tga
+map_Bump body_n.tga
+map_Ke eye_env.tga
+map_d body_d.tga
+refl eye_env.tga
+
+newmtl 27_grayenv_1_0_0.006
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.641939 0.645654 0.545390
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 1
+map_Kd gray_m.tga
+map_Bump body_n.tga
+map_Ke gray_env.tga
+map_d gray_m.tga
+refl gray_env.tga

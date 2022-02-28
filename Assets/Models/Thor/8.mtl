@@ -1,0 +1,64 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 21.01.2019 16:41:53
+
+newmtl eyeball_r
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\JLee\Desktop\models characters\others\Marvell Collection\thor\thor\Thor\ThorCape_Diff.png
+	map_Kd C:\Users\JLee\Desktop\models characters\others\Marvell Collection\thor\thor\Thor\ThorCape_Diff.png
+	map_bump C:\Users\JLee\Desktop\models characters\others\Marvell Collection\thor\thor\Thor\ThorCape_Norm.png
+	bump C:\Users\JLee\Desktop\models characters\others\Marvell Collection\thor\thor\Thor\ThorCape_Norm.png
+
+newmtl eyeball_l
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\JLee\Desktop\models characters\others\Marvell Collection\thor\thor\Thor\ThorHead_Diff.png
+	map_Kd C:\Users\JLee\Desktop\models characters\others\Marvell Collection\thor\thor\Thor\ThorHead_Diff.png
+	map_bump C:\Users\JLee\Desktop\models characters\others\Marvell Collection\thor\thor\Thor\ThorHead_Norm.png
+	bump C:\Users\JLee\Desktop\models characters\others\Marvell Collection\thor\thor\Thor\ThorHead_Norm.png
+
+newmtl ThorHammer_Diff
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\JLee\Desktop\models characters\others\Marvell Collection\thor\thor\Thor\ThorBody_Diff.png
+	map_Kd C:\Users\JLee\Desktop\models characters\others\Marvell Collection\thor\thor\Thor\ThorBody_Diff.png
+	map_bump C:\Users\JLee\Desktop\models characters\others\Marvell Collection\thor\thor\Thor\ThorBody_Norm.png
+	bump C:\Users\JLee\Desktop\models characters\others\Marvell Collection\thor\thor\Thor\ThorBody_Norm.png
+
+newmtl 07___Default
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\JLee\Desktop\models characters\others\Marvell Collection\thor\thor\Thor\thorhammer_diffout.png
+	map_Kd C:\Users\JLee\Desktop\models characters\others\Marvell Collection\thor\thor\Thor\thorhammer_diffout.png
