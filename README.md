@@ -71,13 +71,14 @@ _Games Engines 2 Assignment in Final Year of Bachelor of Computer Science_
 | ------------- | ------------- | ------------- | ------------- |
 | ![1](./Images/Ironman.png) Ironman  | ![1](./Images/Thor.png) Thor, Mjolnir (Hammer) and Stormbreaker(Axe)  | ![1](./Images/CaptainAmerica.png) Captain America  | ![1](./Images/Thanos.png) Thanos  |
 | ![1](./Images/DoctorStrange.png) Doctor Strange  | ![1](./Images/BlackPanther.png) Black Panther  | ![1](./Images/Nebula.png) Nebula  | ![1](./Images/Spooderman.png) Spiderman  |
-| ![1](./Images/Starlord.png) Starlord - Peter Quill  | ![1](./Images/Hulk.png) Hulk  | ![1](./Images/PepperPotts.png) Ironwoman - Pepper Potts  | ![1](./Images/Wanda.png) Wanda  |
-| ![1](./Images/CaptainMarvel.png) Captain Marvel  |
+| ![1](./Images/Starlord.png) Starlord - Peter Quill  | ![1](./Images/Hulk.png) Hulk  | ![1](./Images/PepperPotts.png) Ironwoman - Pepper Potts  | ![1](./Images/CaptainMarvel.png) Captain Marvel  |
 
 ### RenderHub
 
 - Outriders
   - ![1](./Images/Outrider.png)
+- Wanda
+  - ![1](./Images/Wanda.png)
 
 ### Blender - **Created by Me**
 - Sanctuary II (Thanos' main ship)
