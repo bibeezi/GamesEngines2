@@ -26,7 +26,7 @@ public class ShipISpawner : MonoBehaviour
             GameObject newShipI = Instantiate(ShipIPrefab, new Vector3(x, y, z), new Quaternion(-1f, 0, 0, 1));
 
             newShipI.AddComponent<Boid>();
-            newShipI.AddComponent<ShipILand>();
+            newShipI.AddComponent<Arrive>();
         }
     }
 
