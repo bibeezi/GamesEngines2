@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Scene.unity
+- path: Assets/Scenes/6OutriderShips.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
