@@ -13,6 +13,7 @@ public class ShipISpawner : MonoBehaviour
     float maxPosZ = 20f;
     float minPosY = 200f;
     float maxPosY = 400f;
+    public GameObject outriderPrefab;
 
     void Awake()
     {
@@ -23,10 +24,14 @@ public class ShipISpawner : MonoBehaviour
             float y = Random.Range(minPosY, maxPosY);
             float z = Random.Range(minPosZ, maxPosZ);
 
-            GameObject newShipI = Instantiate(ShipIPrefab, new Vector3(x, y, z), new Quaternion(-1f, 0, 0, 1));
+            GameObject newShipI = Instantiate(ShipIPrefab, new Vector3(x, y, z), new Quaternion(-1, 0, 0, 1));
 
-            newShipI.AddComponent<Boid>();
-            newShipI.AddComponent<Arrive>();
+            ShipILand shipILand = newShipI.AddComponent<ShipILand>();
+            ShipIBoid shipIBoid = newShipI.AddComponent<ShipIBoid>();
+            newShipI.AddComponent<ShipIArrive>();
+
+            shipILand.outriderPrefab = outriderPrefab;
+            shipIBoid.enabled = false;
         }
     }
 

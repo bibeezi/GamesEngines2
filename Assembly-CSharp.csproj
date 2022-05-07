@@ -45,6 +45,10 @@
      <Compile Include="Assets\Scripts\StateMachine.cs" />
      <Compile Include="Assets\Scripts\PathFollowing.cs" />
      <Compile Include="Assets\Scripts\ShipILand.cs" />
+     <Compile Include="Assets\Scripts\ShipIBoid.cs" />
+     <Compile Include="Assets\Scripts\ShipIArrive.cs" />
+     <Compile Include="Assets\Scripts\ShipISteeringBehaviour.cs" />
+     <Compile Include="Assets\Scripts\ShipICamera.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
