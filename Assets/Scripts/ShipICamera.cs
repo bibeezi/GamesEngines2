@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShipICamera : MonoBehaviour
 {
-    public float speed = 10f; 
+    public float speed = 7f; 
     
     // Use this for initialization
     void Start()
@@ -15,7 +15,7 @@ public class ShipICamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.position != new Vector3(560, 13, 17))
+        if(Vector3.Distance(transform.position, new Vector3(560, 13, 75)) > 10f)
         {
             transform.position -= new Vector3(0, 0, 1) * Time.deltaTime * speed;
         }

@@ -9,10 +9,10 @@ public class ShipILand : MonoBehaviour
     ShipIArrive shipIArrive;
     ShipIBoid shipIBoid;
     public GameObject outriderPrefab;
-    public int outriderCount = 10;
+    public int outriderCount = 5;
     bool landing = true;
     bool releaseOutriders = false;
-    public int outriderSpeed = 20;
+    bool closeShip = true;
 
     // Start is called before the first frame update
     void Start()
@@ -31,23 +31,28 @@ public class ShipILand : MonoBehaviour
             Debug.DrawRay(transform.position, transform.TransformDirection(-Vector3.forward) * hit.distance, Color.yellow);
             shipIArrive.targetPosition =  hit.point;
             shipIBoid.enabled = true;
+            landing = false;
         }
 
-        if(Vector3.Distance(transform.position, hit.point) < 15f && releaseOutriders == false)
+        if(Vector3.Distance(transform.position, hit.point) < 20f && releaseOutriders == false)
         {
             shipIBoid.enabled = false;
             releaseOutriders = true;
         }
 
-        if(releaseOutriders)
+        if(releaseOutriders && closeShip)
         {
             for(int i = 0; i < outriderCount; i++)
             {
-                GameObject newOutrider = Instantiate(outriderPrefab, transform.position, transform.rotation);
+                float x = Random.Range(-10f, 10f);
+                float z = Random.Range(-10f, 10f);
 
-                newOutrider.transform.position -= new Vector3(1, 0, 0) * Time.deltaTime * outriderSpeed;
+                GameObject newOutrider = Instantiate(outriderPrefab, transform.position - new Vector3(x, 20, z), new Quaternion(0f, -1f, 0f, 1));
+
+                newOutrider.AddComponent<Outrider>();
+                newOutrider.AddComponent<UnityEngine.AI.NavMeshAgent>();
             }
-            releaseOutriders = false;
+            closeShip = false;
         }
     }
 }

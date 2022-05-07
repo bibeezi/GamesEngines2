@@ -9,8 +9,8 @@ public class ShipISpawner : MonoBehaviour
 
     float minPosX = 600f;
     float maxPosX = 900f;
-    float minPosZ = 400f;
-    float maxPosZ = 20f;
+    float minPosZ = 300f;
+    float maxPosZ = 100f;
     float minPosY = 200f;
     float maxPosY = 400f;
     public GameObject outriderPrefab;
