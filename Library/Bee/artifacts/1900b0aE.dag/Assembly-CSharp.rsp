@@ -338,6 +338,7 @@
 "Assets/Scripts/Path.cs"
 "Assets/Scripts/PathFollowing.cs"
 "Assets/Scripts/SanctuaryII.cs"
+"Assets/Scripts/Seek.cs"
 "Assets/Scripts/ShipIArrive.cs"
 "Assets/Scripts/ShipIBoid.cs"
 "Assets/Scripts/ShipICamera.cs"
