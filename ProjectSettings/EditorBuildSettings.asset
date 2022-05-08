@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/7SanctuaryIILeviathans.unity
     guid: 9e0c5fb80c5b67549ac4101d0cf98dff
+  - enabled: 1
+    path: Assets/Scenes/9AvengersAssemble.unity
+    guid: 4f9eaf20411effd458ac00d653d89c9c
   m_configObjects: {}
