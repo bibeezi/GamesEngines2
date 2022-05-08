@@ -9,7 +9,7 @@ public class ShipILand : MonoBehaviour
     ShipIArrive shipIArrive;
     ShipIBoid shipIBoid;
     public GameObject outriderPrefab;
-    public int outriderCount = 5;
+    public int outriderCount = 30;
     bool landing = true;
     bool releaseOutriders = false;
     bool closeShip = true;

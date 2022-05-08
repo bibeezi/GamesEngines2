@@ -228,22 +228,13 @@ GameObject:
   m_Component:
   - component: {fileID: 751347976}
   - component: {fileID: 751347975}
-  - component: {fileID: 751347974}
   m_Layer: 0
   m_Name: Side Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!81 &751347974
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751347973}
-  m_Enabled: 1
+  m_IsActive: 1
 --- !u!20 &751347975
 Camera:
   m_ObjectHideFlags: 0
@@ -294,14 +285,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 751347973}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1023, y: 73.86, z: 243.84}
+  m_LocalRotation: {x: -0.08481483, y: 0.4478815, z: 0.03463611, w: 0.88938683}
+  m_LocalPosition: {x: 532, y: 244, z: 64}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -10.48, y: 53.535, z: -0.837}
 --- !u!114 &837186549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -514,22 +505,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1038619495}
   - component: {fileID: 1038619494}
-  - component: {fileID: 1038619493}
   m_Layer: 0
   m_Name: Top Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!81 &1038619493
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1038619492}
-  m_Enabled: 1
+  m_IsActive: 1
 --- !u!20 &1038619494
 Camera:
   m_ObjectHideFlags: 0
@@ -588,6 +570,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -26.099, y: 90, z: 0}
+--- !u!1 &1686074033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1686074034}
+  - component: {fileID: 1686074035}
+  m_Layer: 0
+  m_Name: LeviathanSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1686074034
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686074033}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1284.93, y: 168.45815, z: 457.2594}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1686074035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686074033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9548c42c65c6b042ad60bce44942f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leviathanPrefab: {fileID: 7070966995696943735, guid: 7269cbbfd4c6dbd49960945bbe873615,
+    type: 3}
+  count: 15
 --- !u!23 &875979851011993953
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -689,3 +718,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 963194227}
+  sideCamera: {fileID: 751347975}
