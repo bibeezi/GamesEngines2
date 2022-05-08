@@ -338,6 +338,8 @@
 "Assets/Scripts/Outrider.cs"
 "Assets/Scripts/Path.cs"
 "Assets/Scripts/PathFollowing.cs"
+"Assets/Scripts/PortalCamera.cs"
+"Assets/Scripts/PortalSpawner.cs"
 "Assets/Scripts/SanctuaryII.cs"
 "Assets/Scripts/Seek.cs"
 "Assets/Scripts/ShipIArrive.cs"
