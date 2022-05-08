@@ -45,9 +45,11 @@
      <Compile Include="Assets\Scripts\Boid.cs" />
      <Compile Include="Assets\Scripts\SanctuaryII.cs" />
      <Compile Include="Assets\Starfield Skybox\Demo\Script\LookCamera.cs" />
+     <Compile Include="Assets\Scripts\PortalSpawner.cs" />
      <Compile Include="Assets\Scripts\ShipISteeringBehaviour.cs" />
      <Compile Include="Assets\Scripts\Arrive.cs" />
      <Compile Include="Assets\Scripts\Leviathan.cs" />
+     <Compile Include="Assets\Scripts\PortalCamera.cs" />
      <Compile Include="Assets\Scripts\SteeringBehaviour.cs" />
      <Compile Include="Assets\Scripts\StateMachine.cs" />
      <Compile Include="Assets\Scripts\PathFollowing.cs" />
@@ -57,8 +59,8 @@
      <Compile Include="Assets\Scripts\SpineAnimator.cs" />
      <Compile Include="Assets\Scripts\ShipIArrive.cs" />
      <Compile Include="Assets\Scripts\ShipIBoid.cs" />
-     <Compile Include="Assets\Scripts\PortalSpawner.cs" />
-     <Compile Include="Assets\Scripts\PortalCamera.cs" />
+     <Compile Include="Assets\Scripts\AvengerShipSpawner.cs" />
+     <Compile Include="Assets\Scripts\AlphaChange.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

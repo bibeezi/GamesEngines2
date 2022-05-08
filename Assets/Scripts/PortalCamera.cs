@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PortalCamera : MonoBehaviour
 {
-    public Camera camera;
-    
+    public Camera Shipcamera;
+    public float speed = 7f; 
+
     // Use this for initialization
     void Start()
     {
@@ -15,6 +16,6 @@ public class PortalCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        transform.position += new Vector3(0, 0, 1) * Time.deltaTime * speed;        
     }
 }
