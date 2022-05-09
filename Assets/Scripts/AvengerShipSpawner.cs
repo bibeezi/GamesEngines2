@@ -38,15 +38,9 @@ public class AvengerShipSpawner : MonoBehaviour
             }
 
             newAvengerShip.AddComponent<AlphaChange>();
-            Boid boid = newAvengerShip.AddComponent<Boid>();
-            newAvengerShip.AddComponent<ObstacleAvoidance>();
-            newAvengerShip.AddComponent<Pursue>();
-            newAvengerShip.AddComponent<Flee>();
             newAvengerShip.AddComponent<AvengerShip>();
             Rigidbody rigidbody = newAvengerShip.AddComponent<Rigidbody>();
             
-            boid.enabled = false;
-
             rigidbody.useGravity = false;
             rigidbody.isKinematic = true;
         }

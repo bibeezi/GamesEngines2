@@ -41,9 +41,6 @@ public class AlphaChange : MonoBehaviour
                 {
                     material.color = new Color(colour.r, colour.g, colour.b, colour.a + 0.001f);
                 }
-                else {
-                    boid.enabled = true;
-                }
             }
         }
     }   

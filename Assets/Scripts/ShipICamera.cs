@@ -16,7 +16,7 @@ public class ShipICamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Vector3.Distance(transform.position, new Vector3(560, 13, 75)) > 20f)
+        if(Vector3.Distance(transform.position, new Vector3(560, 13, 100)) > 20f)
         {
             transform.position -= new Vector3(0, 0, 1) * Time.deltaTime * speed;
         }

@@ -44,6 +44,7 @@
      <Compile Include="Assets\Scripts\ShipICamera.cs" />
      <Compile Include="Assets\Scripts\Flee.cs" />
      <Compile Include="Assets\Scripts\NoiseWander.cs" />
+     <Compile Include="Assets\Scripts\AvengerShip.cs" />
      <Compile Include="Assets\Scripts\LeviathanSpawner.cs" />
      <Compile Include="Assets\Scripts\Boid.cs" />
      <Compile Include="Assets\Scripts\SanctuaryII.cs" />
@@ -64,7 +65,6 @@
      <Compile Include="Assets\Scripts\SpineAnimator.cs" />
      <Compile Include="Assets\Scripts\ShipIArrive.cs" />
      <Compile Include="Assets\Scripts\ShipIBoid.cs" />
-     <Compile Include="Assets\Scripts\AvengerShip.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

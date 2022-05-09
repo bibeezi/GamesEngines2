@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class PortalCamera : MonoBehaviour
@@ -16,6 +17,11 @@ public class PortalCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(0, 0, 1) * Time.deltaTime * speed;        
+        transform.position += new Vector3(0, 0, 1) * Time.deltaTime * speed;
+
+        if(transform.position.z > 120)
+        {
+            SceneManager.LoadScene(sceneName: "10FightScene");
+        }
     }
 }
