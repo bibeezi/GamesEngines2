@@ -8,6 +8,7 @@ public class AvengerShipSpawner : MonoBehaviour
     public GameObject avengerShipII;
     public GameObject[] portals;
     public int count = 6;
+    GameObject newAvengerShip;
 
     // Start is called before the first frame update
     void Start()
@@ -22,14 +23,20 @@ public class AvengerShipSpawner : MonoBehaviour
 
             if(whichShip == 1)
             {
-                GameObject newAvengerShip = Instantiate(avengerShipII, portal.transform.position - (transform.right * 10), new Quaternion(0, 1, 0, 1));
-                newAvengerShip.AddComponent<AlphaChange>();
+                newAvengerShip = Instantiate(avengerShipII, portal.transform.position - (transform.right * 10), new Quaternion(0, 1, 0, 1));
             }
             else
             {
-                GameObject newAvengerShip = Instantiate(avengerShipI, portal.transform.position - (transform.right * 10), new Quaternion(0, 1, 0, 1));
-                newAvengerShip.AddComponent<AlphaChange>();
+                newAvengerShip = Instantiate(avengerShipI, portal.transform.position - (transform.right * 10), new Quaternion(0, 1, 0, 1));
             }
+
+            newAvengerShip.AddComponent<AlphaChange>();
+            Boid boid = newAvengerShip.AddComponent<Boid>();
+            newAvengerShip.AddComponent<ObstacleAvoidance>();
+            newAvengerShip.AddComponent<Pursue>();
+            newAvengerShip.AddComponent<Flee>();
+
+            boid.enabled = false;
         }
     }
 

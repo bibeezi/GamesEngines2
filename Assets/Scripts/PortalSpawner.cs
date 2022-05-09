@@ -37,6 +37,7 @@ public class PortalSpawner : MonoBehaviour
             door.transform.parent = newPortal.transform;
             door.transform.localScale = new Vector3(1f, shape.radius * 2, shape.radius * 2);
             door.GetComponent<MeshRenderer>().material = portalDoorMat;
+            door.AddComponent<ClosePortal>();
         }
 
         avengerShipSpawner.enabled = true;
