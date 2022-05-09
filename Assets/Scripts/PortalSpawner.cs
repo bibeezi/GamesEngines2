@@ -30,14 +30,21 @@ public class PortalSpawner : MonoBehaviour
             newPortal.tag = "portal";
 
             ParticleSystem particleSystem = newPortal.GetComponent<ParticleSystem>();
+            
             var shape = particleSystem.shape;
             shape.radius = Random.Range(13f, 30f);
+
 
             door.transform.position = newPortal.transform.position;
             door.transform.parent = newPortal.transform;
             door.transform.localScale = new Vector3(1f, shape.radius * 2, shape.radius * 2);
+            
             door.GetComponent<MeshRenderer>().material = portalDoorMat;
+            
             door.AddComponent<ClosePortal>();
+            
+            SphereCollider sphereCollider = door.GetComponent<SphereCollider>();
+            sphereCollider.isTrigger = true;
         }
 
         avengerShipSpawner.enabled = true;

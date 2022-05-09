@@ -5,7 +5,7 @@ using UnityEngine;
 public class AlphaChange : MonoBehaviour
 {
     Boid boid;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +40,6 @@ public class AlphaChange : MonoBehaviour
                 if(colour.a < 1)
                 {
                     material.color = new Color(colour.r, colour.g, colour.b, colour.a + 0.001f);
-                    transform.position += transform.forward * Time.deltaTime;
                 }
                 else {
                     boid.enabled = true;

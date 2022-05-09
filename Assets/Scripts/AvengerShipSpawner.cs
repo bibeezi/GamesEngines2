@@ -24,10 +24,17 @@ public class AvengerShipSpawner : MonoBehaviour
             if(whichShip == 1)
             {
                 newAvengerShip = Instantiate(avengerShipII, portal.transform.position - (transform.right * 10), new Quaternion(0, 1, 0, 1));
+                BoxCollider boxCollider = newAvengerShip.AddComponent<BoxCollider>();
+
+                boxCollider.center = new Vector3(0f, 0, -0.1f);
+                boxCollider.size = new Vector3(0, 8, 12);
             }
             else
             {
                 newAvengerShip = Instantiate(avengerShipI, portal.transform.position - (transform.right * 10), new Quaternion(0, 1, 0, 1));
+                BoxCollider boxCollider = newAvengerShip.AddComponent<BoxCollider>();
+                
+                boxCollider.center = new Vector3(0.0125f, 0, -0.1f);                
             }
 
             newAvengerShip.AddComponent<AlphaChange>();
@@ -35,8 +42,13 @@ public class AvengerShipSpawner : MonoBehaviour
             newAvengerShip.AddComponent<ObstacleAvoidance>();
             newAvengerShip.AddComponent<Pursue>();
             newAvengerShip.AddComponent<Flee>();
-
+            newAvengerShip.AddComponent<AvengerShip>();
+            Rigidbody rigidbody = newAvengerShip.AddComponent<Rigidbody>();
+            
             boid.enabled = false;
+
+            rigidbody.useGravity = false;
+            rigidbody.isKinematic = true;
         }
     }
 
