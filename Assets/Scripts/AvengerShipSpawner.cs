@@ -9,7 +9,8 @@ public class AvengerShipSpawner : MonoBehaviour
     public GameObject[] portals;
     public int count = 6;
     GameObject newAvengerShip;
-
+    int avengerShipICount = 0;
+    int avengerShipIICount = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,17 +25,23 @@ public class AvengerShipSpawner : MonoBehaviour
             if(whichShip == 1)
             {
                 newAvengerShip = Instantiate(avengerShipII, portal.transform.position - (transform.right * 10), new Quaternion(0, 1, 0, 1));
+                
                 BoxCollider boxCollider = newAvengerShip.AddComponent<BoxCollider>();
 
                 boxCollider.center = new Vector3(0f, 0, -0.1f);
                 boxCollider.size = new Vector3(0, 8, 12);
+                
+                avengerShipIICount++;
             }
             else
             {
                 newAvengerShip = Instantiate(avengerShipI, portal.transform.position - (transform.right * 10), new Quaternion(0, 1, 0, 1));
+
                 BoxCollider boxCollider = newAvengerShip.AddComponent<BoxCollider>();
                 
                 boxCollider.center = new Vector3(0.0125f, 0, -0.1f);                
+                
+                avengerShipICount++;
             }
 
             newAvengerShip.AddComponent<AlphaChange>();
@@ -44,6 +51,9 @@ public class AvengerShipSpawner : MonoBehaviour
             rigidbody.useGravity = false;
             rigidbody.isKinematic = true;
         }
+
+        PlayerPrefs.SetInt("avengerShipICount", avengerShipICount);
+        PlayerPrefs.SetInt("avengerShipIICount", avengerShipIICount);
     }
 
     // Update is called once per frame

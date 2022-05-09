@@ -333,6 +333,7 @@
 "Assets/Scripts/Arrive.cs"
 "Assets/Scripts/AvengerShip.cs"
 "Assets/Scripts/AvengerShipSpawner.cs"
+"Assets/Scripts/AvengerShipSpawnerFight.cs"
 "Assets/Scripts/Boid.cs"
 "Assets/Scripts/ClosePortal.cs"
 "Assets/Scripts/Flee.cs"
