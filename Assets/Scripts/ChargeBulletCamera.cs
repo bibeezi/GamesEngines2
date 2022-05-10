@@ -12,6 +12,8 @@ public class ChargeBulletCamera : MonoBehaviour
         yield return new WaitForSeconds(6f);
 
         sideCamera.enabled = true;
+        sideCamera.GetComponent<AudioListener>().enabled = true;
+        gameObject.GetComponent<AudioListener>().enabled = false;
         gameObject.SetActive(false);
 
         avengerSpawnerFinal.gameObject.SetActive(true);

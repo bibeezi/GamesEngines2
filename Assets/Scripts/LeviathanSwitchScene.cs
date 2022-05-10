@@ -15,7 +15,7 @@ public class LeviathanSwitchScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Vector3.Distance(transform.position, gameObject.GetComponent<Seek>().target) < 275f)
+        if(Vector3.Distance(transform.position, gameObject.GetComponent<Seek>().target) < 200f)
         {
             SceneManager.LoadScene(sceneName: "9AvengersAssemble");
         }

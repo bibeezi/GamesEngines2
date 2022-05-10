@@ -13,6 +13,7 @@ public class ShipILand : MonoBehaviour
     bool landing = true;
     bool releaseOutriders = false;
     bool closeShip = true;
+    bool playOnce = true;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +33,12 @@ public class ShipILand : MonoBehaviour
             shipIArrive.targetPosition =  hit.point;
             shipIBoid.enabled = true;
             landing = false;
+        }
+
+        if(Vector3.Distance(transform.position, hit.point) < 140f && playOnce)
+        {
+            GetComponent<AudioSource>().Play();
+            playOnce = false;
         }
 
         if(Vector3.Distance(transform.position, hit.point) < 20f && releaseOutriders == false)

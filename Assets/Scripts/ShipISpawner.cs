@@ -14,6 +14,7 @@ public class ShipISpawner : MonoBehaviour
     float minPosY = 200f;
     float maxPosY = 400f;
     public GameObject outriderPrefab;
+    public AudioClip clip;
 
     void Awake()
     {
@@ -29,6 +30,11 @@ public class ShipISpawner : MonoBehaviour
             ShipILand shipILand = newShipI.AddComponent<ShipILand>();
             ShipIBoid shipIBoid = newShipI.AddComponent<ShipIBoid>();
             newShipI.AddComponent<ShipIArrive>();
+            AudioSource audioSource = newShipI.AddComponent<AudioSource>();
+
+            audioSource.clip = clip;
+            audioSource.volume = 0.1f;
+            audioSource.playOnAwake = false;
 
             shipILand.outriderPrefab = outriderPrefab;
             shipIBoid.enabled = false;
@@ -38,7 +44,7 @@ public class ShipISpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame

@@ -7,8 +7,8 @@ using UnityEngine;
 public class ShipIArrive: ShipISteeringBehaviour
 {
     public Vector3 targetPosition = Vector3.zero;
-    public float slowingDistance = 100.0f;
-    public float decelleration = -1.0f;
+    public float slowingDistance = 50.0f;
+    public float decelleration = -2.0f;
 
     public GameObject targetGameObject = null;
 

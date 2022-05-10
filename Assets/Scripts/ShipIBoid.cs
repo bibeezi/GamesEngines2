@@ -16,8 +16,8 @@ public class ShipIBoid : MonoBehaviour
 
     [Range(0.0f, 1.0f)]
     public float banking = 0.1f;
-    public float maxSpeed = 20.0f;
-    public float maxForce = 10.0f;
+    public float maxSpeed = 110.0f;
+    public float maxForce = 120.0f;
 
     public void OnDrawGizmos()
     {

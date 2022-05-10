@@ -22,7 +22,7 @@ public class ClosePortal : MonoBehaviour
             transform.parent.localScale = Vector3.Lerp(transform.parent.localScale, Vector3.zero, (shrinkSpeed * Time.deltaTime) / Vector3.Distance(transform.parent.localScale, Vector3.zero));
         }
 
-        if(transform.localScale.x < 0.8f)
+        if(transform.localScale.x < 0.7f)
         {
             Destroy(gameObject);
             Destroy(transform.parent.gameObject);

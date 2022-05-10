@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ShipICamera : MonoBehaviour
 {
-    public float speed = 7f; 
+    public float speed = 15f; 
     
     // Use this for initialization
     void Start()
