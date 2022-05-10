@@ -24,6 +24,7 @@ public class LeviathanSpawnerFight : MonoBehaviour
 
             GameObject newLeviathan = Instantiate(leviathanPrefab, new Vector3(x, y, z), new Quaternion(0, -1, 0, 1));
 
+            Boid boid = newLeviathan.transform.GetChild(0).gameObject.GetComponent<Boid>();
             LeviathanFight leviathanFight = newLeviathan.transform.GetChild(0).gameObject.AddComponent<LeviathanFight>();
             Seek seek = newLeviathan.transform.GetChild(0).gameObject.GetComponent<Seek>();
             NoiseWander vertical = newLeviathan.transform.GetChild(0).gameObject.AddComponent<NoiseWander>();
@@ -48,6 +49,9 @@ public class LeviathanSpawnerFight : MonoBehaviour
             horizontal.distance = 20f;
 
             leviathanFight.avengerShipMask = LayerMask.GetMask("AvengerShip");
+
+            boid.maxSpeed = 20f;
+            boid.maxForce = 30f;
         }
     }
 

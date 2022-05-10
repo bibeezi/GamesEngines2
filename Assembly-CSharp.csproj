@@ -44,11 +44,14 @@
      <Compile Include="Assets\Scripts\Flee.cs" />
      <Compile Include="Assets\Scripts\NoiseWander.cs" />
      <Compile Include="Assets\Scripts\AvengerShip.cs" />
+     <Compile Include="Assets\Scripts\LeviathanSwitchScene.cs" />
      <Compile Include="Assets\Scripts\LeviathanSpawner.cs" />
      <Compile Include="Assets\Scripts\Boid.cs" />
      <Compile Include="Assets\Scripts\SanctuaryII.cs" />
      <Compile Include="Assets\Starfield Skybox\Demo\Script\LookCamera.cs" />
+     <Compile Include="Assets\Scripts\LeviathanFight.cs" />
      <Compile Include="Assets\Scripts\PortalSpawner.cs" />
+     <Compile Include="Assets\Scripts\AvengerShipFight.cs" />
      <Compile Include="Assets\Scripts\ShipISteeringBehaviour.cs" />
      <Compile Include="Assets\Scripts\Arrive.cs" />
      <Compile Include="Assets\Scripts\PortalCamera.cs" />
@@ -61,12 +64,10 @@
      <Compile Include="Assets\Scripts\Outrider.cs" />
      <Compile Include="Assets\Scripts\ShipILand.cs" />
      <Compile Include="Assets\Scripts\SpineAnimator.cs" />
+     <Compile Include="Assets\Scripts\LeviathanSpawnerFight.cs" />
      <Compile Include="Assets\Scripts\ShipIArrive.cs" />
      <Compile Include="Assets\Scripts\ShipIBoid.cs" />
-     <Compile Include="Assets\Scripts\LeviathanSwitchScene.cs" />
-     <Compile Include="Assets\Scripts\LeviathanFight.cs" />
-     <Compile Include="Assets\Scripts\LeviathanSpawnerFight.cs" />
-     <Compile Include="Assets\Scripts\AvengerShipFight.cs" />
+     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
