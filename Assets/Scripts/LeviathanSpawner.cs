@@ -24,18 +24,11 @@ public class LeviathanSpawner : MonoBehaviour
 
             GameObject newLeviathan = Instantiate(leviathanPrefab, new Vector3(x, y, z), new Quaternion(0, -1, 0, 1));
 
-            newLeviathan.layer = LayerMask.NameToLayer("Leviathan");
-            newLeviathan.AddComponent<SpineAnimator>();
-            
-            newLeviathan.transform.GetChild(0).gameObject.AddComponent<Leviathan>();
-            newLeviathan.transform.GetChild(0).gameObject.AddComponent<Boid>();
-            ObstacleAvoidance obstacleAvoidance = newLeviathan.transform.GetChild(0).gameObject.AddComponent<ObstacleAvoidance>();
-            Seek seek = newLeviathan.transform.GetChild(0).gameObject.AddComponent<Seek>();
+            newLeviathan.transform.GetChild(0).gameObject.AddComponent<LeviathanSwitchScene>();
+
+            Seek seek = newLeviathan.transform.GetChild(0).gameObject.GetComponent<Seek>();
             NoiseWander vertical = newLeviathan.transform.GetChild(0).gameObject.AddComponent<NoiseWander>();
             NoiseWander horizontal = newLeviathan.transform.GetChild(0).gameObject.AddComponent<NoiseWander>();
-
-            obstacleAvoidance.forwardFeelerDepth = 50f;
-            obstacleAvoidance.sideFeelerDepth = 30f;
 
             seek.target = new Vector3(300, newLeviathan.transform.position.y, newLeviathan.transform.position.z);
 

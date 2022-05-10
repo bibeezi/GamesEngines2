@@ -13,11 +13,18 @@ public class AvengerShipSpawnerFight : MonoBehaviour
     float minPosZ = 60f;
     float maxPosZ = 400f;
     float minPosY = 60f;
-    float maxPosY = 200f;
+    float maxPosY = 100f;
+    GameObject[] leviathans;
     void Awake()
+    {
+        
+    }
+    // Start is called before the first frame update
+    void Start()
     {
         avengerShipICount = PlayerPrefs.GetInt("avengerShipICount");
         avengerShipIICount = PlayerPrefs.GetInt("avengerShipIICount");
+        leviathans = GameObject.FindGameObjectsWithTag("leviathan");
 
         for(int i = 0; i < avengerShipICount; i++)
         {
@@ -25,7 +32,28 @@ public class AvengerShipSpawnerFight : MonoBehaviour
             float y = Random.Range(minPosY, maxPosY);
             float z = Random.Range(minPosZ, maxPosZ);
 
-            Instantiate(avengerShipI, new Vector3(x, y, z), new Quaternion(0, 1, 0, 1));
+            int whichLeviathan = Random.Range(0, leviathans.Length);
+            GameObject pursueLeviathan = leviathans[whichLeviathan].transform.GetChild(0).gameObject;
+
+            GameObject newAvengerShipI = Instantiate(avengerShipI, new Vector3(x, y, z), new Quaternion(0, 1, 0, 1));
+
+            newAvengerShipI.layer = LayerMask.NameToLayer("AvengerShip");
+            newAvengerShipI.AddComponent<AvengerShip>();
+            Boid boid = newAvengerShipI.AddComponent<Boid>();
+            ObstacleAvoidance obstacleAvoidance = newAvengerShipI.AddComponent<ObstacleAvoidance>();
+            Flee flee = newAvengerShipI.AddComponent<Flee>();
+            Pursue pursue = newAvengerShipI.AddComponent<Pursue>();
+            
+            pursue.target = pursueLeviathan.GetComponent<Boid>();
+
+            obstacleAvoidance.forwardFeelerDepth = 50f;
+            obstacleAvoidance.sideFeelerDepth = 20f;
+            obstacleAvoidance.weight = 10f;
+
+            flee.enabled = false;
+
+            boid.maxSpeed = 20f;
+            boid.maxForce = 30f;
         }
         
         for(int i = 0; i < avengerShipIICount; i++)
@@ -34,13 +62,29 @@ public class AvengerShipSpawnerFight : MonoBehaviour
             float y = Random.Range(minPosY, maxPosY);
             float z = Random.Range(minPosZ, maxPosZ);
             
-            Instantiate(avengerShipII, new Vector3(x, y, z), new Quaternion(0, 1, 0, 1));
+            int whichLeviathan = Random.Range(0, leviathans.Length);
+            GameObject pursueLeviathan = leviathans[whichLeviathan].transform.GetChild(0).gameObject;
+
+            GameObject newAvengerShipII = Instantiate(avengerShipII, new Vector3(x, y, z), new Quaternion(0, 1, 0, 1));
+            
+            newAvengerShipII.layer = LayerMask.NameToLayer("AvengerShip");
+            newAvengerShipII.AddComponent<AvengerShip>();
+            Boid boid = newAvengerShipII.AddComponent<Boid>();
+            ObstacleAvoidance obstacleAvoidance = newAvengerShipII.AddComponent<ObstacleAvoidance>();
+            Flee flee = newAvengerShipII.AddComponent<Flee>();
+            Pursue pursue = newAvengerShipII.AddComponent<Pursue>();
+
+            pursue.target = pursueLeviathan.GetComponent<Boid>();
+
+            obstacleAvoidance.forwardFeelerDepth = 50f;
+            obstacleAvoidance.sideFeelerDepth = 20f;
+            obstacleAvoidance.weight = 10f;
+
+            flee.enabled = false;
+
+            boid.maxSpeed = 20f;
+            boid.maxForce = 30f;
         }
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
     }
 
     // Update is called once per frame

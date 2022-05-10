@@ -26,21 +26,12 @@ public class AvengerShipSpawner : MonoBehaviour
             {
                 newAvengerShip = Instantiate(avengerShipII, portal.transform.position - (transform.right * 10), new Quaternion(0, 1, 0, 1));
                 
-                BoxCollider boxCollider = newAvengerShip.AddComponent<BoxCollider>();
-
-                boxCollider.center = new Vector3(0f, 0, -0.1f);
-                boxCollider.size = new Vector3(0, 8, 12);
-                
                 avengerShipIICount++;
             }
             else
             {
                 newAvengerShip = Instantiate(avengerShipI, portal.transform.position - (transform.right * 10), new Quaternion(0, 1, 0, 1));
 
-                BoxCollider boxCollider = newAvengerShip.AddComponent<BoxCollider>();
-                
-                boxCollider.center = new Vector3(0.0125f, 0, -0.1f);                
-                
                 avengerShipICount++;
             }
 

@@ -36,7 +36,6 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Path.cs" />
      <Compile Include="Assets\Scripts\ClosePortal.cs" />
      <Compile Include="Assets\Scripts\Seek.cs" />
      <Compile Include="Assets\Scripts\ShipISpawner.cs" />
@@ -52,11 +51,10 @@
      <Compile Include="Assets\Scripts\PortalSpawner.cs" />
      <Compile Include="Assets\Scripts\ShipISteeringBehaviour.cs" />
      <Compile Include="Assets\Scripts\Arrive.cs" />
-     <Compile Include="Assets\Scripts\Leviathan.cs" />
      <Compile Include="Assets\Scripts\PortalCamera.cs" />
      <Compile Include="Assets\Scripts\SteeringBehaviour.cs" />
      <Compile Include="Assets\Scripts\StateMachine.cs" />
-     <Compile Include="Assets\Scripts\PathFollowing.cs" />
+     <Compile Include="Assets\Scripts\AvengerShipSpawnerFight.cs" />
      <Compile Include="Assets\Scripts\ObstacleAvoidance.cs" />
      <Compile Include="Assets\Scripts\AlphaChange.cs" />
      <Compile Include="Assets\Scripts\Pursue.cs" />
@@ -65,7 +63,10 @@
      <Compile Include="Assets\Scripts\SpineAnimator.cs" />
      <Compile Include="Assets\Scripts\ShipIArrive.cs" />
      <Compile Include="Assets\Scripts\ShipIBoid.cs" />
-     <Compile Include="Assets\Scripts\AvengerShipSpawnerFight.cs" />
+     <Compile Include="Assets\Scripts\LeviathanSwitchScene.cs" />
+     <Compile Include="Assets\Scripts\LeviathanFight.cs" />
+     <Compile Include="Assets\Scripts\LeviathanSpawnerFight.cs" />
+     <Compile Include="Assets\Scripts\AvengerShipFight.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

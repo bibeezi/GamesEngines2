@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3426396008144090497}
   - component: {fileID: 1787619162217825452}
   - component: {fileID: 5384192997237482691}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 5331300167024721034}
   - component: {fileID: 9208933251444605258}
   - component: {fileID: 5530565646386329756}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 3658413730198774185}
   - component: {fileID: 736405984352749820}
   - component: {fileID: 6498219680177287168}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 8435505845462688606}
   - component: {fileID: 4287867570274945328}
   - component: {fileID: 8487195493653640180}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -344,7 +344,7 @@ GameObject:
   - component: {fileID: 6446989835749474183}
   - component: {fileID: 6970079299623094583}
   - component: {fileID: 5905138493629826334}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -427,7 +427,10 @@ GameObject:
   - component: {fileID: 4808289973298490568}
   - component: {fileID: 4271430952239635030}
   - component: {fileID: 5638830239355651721}
-  m_Layer: 0
+  - component: {fileID: 5238951453855541470}
+  - component: {fileID: 8607791844086158325}
+  - component: {fileID: 1492735821683677255}
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -499,6 +502,68 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5238951453855541470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8848735586744607266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b015e4c6abedd174b849781f0eb333c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: {x: 0, y: 0, z: 0}
+  acceleration: {x: 0, y: 0, z: 0}
+  velocity: {x: 0, y: 0, z: 0}
+  mass: 1
+  damping: 0.01
+  banking: 0.1
+  maxSpeed: 5
+  maxForce: 10
+--- !u!114 &8607791844086158325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8848735586744607266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 803df99cc75bf3b4699858bf28b6e6d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 10
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  scale: 4
+  forwardFeelerDepth: 50
+  sideFeelerDepth: 20
+  frontFeelerUpdatesPerSecond: 10
+  sideFeelerUpdatesPerSecond: 5
+  feelerRadius: 2
+  forceType: 0
+  mask:
+    serializedVersion: 2
+    m_Bits: 119
+--- !u!114 &1492735821683677255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8848735586744607266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67cf5b6fd98de8c4da88e286d311ef2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  targetGameObject: {fileID: 0}
+  target: {x: 0, y: 0, z: 0}
 --- !u!1 &9043241794829692183
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,9 +573,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8560178316961281965}
+  - component: {fileID: 5785257645102505627}
   m_Layer: 0
   m_Name: Leviathan
-  m_TagString: Untagged
+  m_TagString: leviathan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -536,3 +602,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5785257645102505627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9043241794829692183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cd68b4a7067d9240afe528abedcac0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsets: []
+  children: []
+  damping: 10
