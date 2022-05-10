@@ -9,6 +9,7 @@ public class AvengerShipSpawnerFight : MonoBehaviour
     public GameObject avengerShipI;
     public GameObject avengerShipII;
     public GameObject bulletPrefab;
+    public LayerMask leviathanMask;
     float minPosX = 170f;
     float maxPosX = 300f;
     float minPosZ = 60f;
@@ -27,6 +28,8 @@ public class AvengerShipSpawnerFight : MonoBehaviour
         avengerShipICount = PlayerPrefs.GetInt("avengerShipICount");
         avengerShipIICount = PlayerPrefs.GetInt("avengerShipIICount");
 
+        leviathanMask = LayerMask.GetMask("Leviathan");
+
         for(int i = 0; i < avengerShipICount; i++)
         {
             float x = Random.Range(minPosX, maxPosX);
@@ -36,14 +39,16 @@ public class AvengerShipSpawnerFight : MonoBehaviour
             GameObject newAvengerShipI = Instantiate(avengerShipI, new Vector3(x, y, z), new Quaternion(0, 1, 0, 1));
 
             newAvengerShipI.layer = LayerMask.NameToLayer("AvengerShip");
+            newAvengerShipI.tag = "avengershipI";
             AvengerShipFight avengerShipFight = newAvengerShipI.AddComponent<AvengerShipFight>();
             newAvengerShipI.AddComponent<StateMachine>();
             Boid boid = newAvengerShipI.AddComponent<Boid>();
             ObstacleAvoidance obstacleAvoidance = newAvengerShipI.AddComponent<ObstacleAvoidance>();
             newAvengerShipI.AddComponent<Flee>();
-            newAvengerShipI.AddComponent<Pursue>();
+            newAvengerShipI.AddComponent<Seek>();
 
             avengerShipFight.bulletPrefab = bulletPrefab;
+            avengerShipFight.leviathanMask = leviathanMask;
             
             obstacleAvoidance.mask = obstacleAvoidance.mask & ~LayerMask.GetMask("Bullet");
             obstacleAvoidance.forwardFeelerDepth = 50f;
@@ -63,14 +68,16 @@ public class AvengerShipSpawnerFight : MonoBehaviour
             GameObject newAvengerShipII = Instantiate(avengerShipII, new Vector3(x, y, z), new Quaternion(0, 1, 0, 1));
             
             newAvengerShipII.layer = LayerMask.NameToLayer("AvengerShip");
+            newAvengerShipII.tag = "avengershipII";
             AvengerShipFight avengerShipFight = newAvengerShipII.AddComponent<AvengerShipFight>();
             newAvengerShipII.AddComponent<StateMachine>();
             Boid boid = newAvengerShipII.AddComponent<Boid>();
             ObstacleAvoidance obstacleAvoidance = newAvengerShipII.AddComponent<ObstacleAvoidance>();
             newAvengerShipII.AddComponent<Flee>();
-            newAvengerShipII.AddComponent<Pursue>();
+            newAvengerShipII.AddComponent<Seek>();
 
             avengerShipFight.bulletPrefab = bulletPrefab;
+            avengerShipFight.leviathanMask = leviathanMask;
 
             obstacleAvoidance.mask = obstacleAvoidance.mask & ~LayerMask.GetMask("Bullet");
             obstacleAvoidance.forwardFeelerDepth = 50f;

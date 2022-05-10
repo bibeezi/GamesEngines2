@@ -15,6 +15,12 @@ public class LeviathanSpawnerFight : MonoBehaviour
 
     void Awake()
     {
+        
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
         // Spawn Leviathan count number of times
         for(int i = 0; i < count; i++)
         {
@@ -24,14 +30,12 @@ public class LeviathanSpawnerFight : MonoBehaviour
 
             GameObject newLeviathan = Instantiate(leviathanPrefab, new Vector3(x, y, z), new Quaternion(0, -1, 0, 1));
 
-            Boid boid = newLeviathan.transform.GetChild(0).gameObject.GetComponent<Boid>();
             LeviathanFight leviathanFight = newLeviathan.transform.GetChild(0).gameObject.AddComponent<LeviathanFight>();
-            Seek seek = newLeviathan.transform.GetChild(0).gameObject.GetComponent<Seek>();
+            Boid boid = newLeviathan.transform.GetChild(0).gameObject.GetComponent<Boid>();
+            Pursue pursue = newLeviathan.transform.GetChild(0).gameObject.GetComponent<Pursue>();
             NoiseWander vertical = newLeviathan.transform.GetChild(0).gameObject.AddComponent<NoiseWander>();
-            NoiseWander horizontal = newLeviathan.transform.GetChild(0).gameObject.AddComponent<NoiseWander>();
-
-            seek.target = new Vector3(300, newLeviathan.transform.position.y, newLeviathan.transform.position.z);
-
+            NoiseWander horizontal = newLeviathan.transform.GetChild(0).gameObject.AddComponent<NoiseWander>(); 
+     
             float verticalFrequency = Random.Range(0.05f, 0.15f);
             float verticalAmplitude = Random.Range(170f, 190f);
             float horizontalFrequency = Random.Range(0.025f, 0.075f);
@@ -50,15 +54,11 @@ public class LeviathanSpawnerFight : MonoBehaviour
 
             leviathanFight.avengerShipMask = LayerMask.GetMask("AvengerShip");
 
-            boid.maxSpeed = 20f;
-            boid.maxForce = 30f;
-        }
-    }
+            boid.maxSpeed = 40f;
+            boid.maxForce = 45f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+            pursue.enabled = false;
+        }
     }
 
     // Update is called once per frame

@@ -8,6 +8,7 @@ TagManager:
   - avengershipI
   - avengershipII
   - leviathan
+  - bullet
   layers:
   - Default
   - TransparentFX
