@@ -5,7 +5,7 @@ using UnityEngine;
 public class LeviathanSpawner : MonoBehaviour
 {
     public GameObject leviathanPrefab;
-    public int count = 10;
+    public int count = 15;
     float minPosX = 650f;
     float maxPosX = 850f;
     float minPosZ = 60f;
@@ -26,7 +26,7 @@ public class LeviathanSpawner : MonoBehaviour
 
             newLeviathan.transform.GetChild(0).gameObject.AddComponent<LeviathanSwitchScene>();
 
-            Seek seek = newLeviathan.transform.GetChild(0).gameObject.GetComponent<Seek>();
+            Seek seek = newLeviathan.transform.GetChild(0).gameObject.AddComponent<Seek>();
             NoiseWander vertical = newLeviathan.transform.GetChild(0).gameObject.AddComponent<NoiseWander>();
             NoiseWander horizontal = newLeviathan.transform.GetChild(0).gameObject.AddComponent<NoiseWander>();
 

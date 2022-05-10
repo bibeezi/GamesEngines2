@@ -12,6 +12,7 @@ public class LeviathanFight : MonoBehaviour
     GameObject[] avengerShips;
     int whichAvengerShip;
     public int health = 5;
+    
 
     void Awake()
     {
@@ -26,7 +27,7 @@ public class LeviathanFight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
-        avengerShips = FindGameObjectsWithLayer();
+        GameObject[] leviathans = avengerShips = FindGameObjectsWithLayer();
 
         if(avengerShips != null && pursue.target == null)
         {
@@ -58,6 +59,8 @@ public class LeviathanFight : MonoBehaviour
                 }
             }
         }
+
+        leviathans = GameObject.FindGameObjectsWithTag("leviathan");
     }
 
     void OnTriggerEnter(Collider collider)
@@ -70,30 +73,25 @@ public class LeviathanFight : MonoBehaviour
 
             if(health == 0)
             {
-                Destroy(transform.parent.gameObject);
+                transform.parent.gameObject.SetActive(false);
             }
         }
         
         if(collider.tag == "avengershipI" || collider.tag == "avengershipII")
         {
-            pursue.enabled = false;
-            pursueAvengerShip = null;
-            pursue.target = null;
+            collider.gameObject.SetActive(false);
 
             GameObject[] leviathans = GameObject.FindGameObjectsWithTag("leviathan");
 
             foreach(GameObject leviathan in leviathans)
             {
-                if(leviathan.transform.GetChild(0).GetComponent<LeviathanFight>().pursueAvengerShip == collider.gameObject)
+                if(leviathan.GetComponent<LeviathanFight>().pursueAvengerShip == collider.gameObject)
                 {
-                    leviathan.transform.GetChild(0).GetComponent<Pursue>().enabled = false;
-                    leviathan.transform.GetChild(0).GetComponent<LeviathanFight>().pursueAvengerShip = null;
-                    leviathan.transform.GetChild(0).GetComponent<LeviathanFight>().pursue.target = null;
+                    leviathan.GetComponent<Pursue>().enabled = false;
+                    leviathan.GetComponent<LeviathanFight>().pursueAvengerShip = null;
+                    leviathan.GetComponent<LeviathanFight>().pursue.target = null;
                 }
             }
-
-            collider.gameObject.layer = 0;
-            collider.gameObject.SetActive(false);
         }
     }
 

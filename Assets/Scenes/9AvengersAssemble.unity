@@ -163,7 +163,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87938833}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f46cc40763dcf6e40a8e76734d13d30b, type: 3}
   m_Name: 
@@ -173,7 +173,6 @@ MonoBehaviour:
   avengerShipII: {fileID: 7890374521906326345, guid: 73b744dcceb0d9644a9aaab6c8be0268,
     type: 3}
   portals: []
-  count: 6
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,7 +345,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 305.4, y: 22.6, z: 41}
+  m_LocalPosition: {x: 305.858, y: 38.9, z: 41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -365,8 +364,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b274bb56ef91d44385d1db646c22b4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Shipcamera: {fileID: 0}
+  Shipcamera: {fileID: 963194227}
   speed: 7
+  portals: []
 --- !u!1 &986187642
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,4 +493,4 @@ MonoBehaviour:
     type: 3}
   portalDoorMat: {fileID: 2100000, guid: 327112221746ee9449044427e5cb0d0e, type: 2}
   avengerShipSpawner: {fileID: 87938835}
-  count: 6
+  count: 9

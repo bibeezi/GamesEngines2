@@ -7,22 +7,22 @@ public class PortalSpawner : MonoBehaviour
     public GameObject portalPrefab;
     public Material portalDoorMat;
     public AvengerShipSpawner avengerShipSpawner;
-    public int count = 6;
+    public int count = 9;
 
     float minPosX = 260f;
     float maxPosX = 280f;
     float minPosY = 20f;
-    float maxPosY = 60f;
+    float maxPosY = 150f;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         // Spawn Portals count number of times
         for(int i = 0; i < count; i++)
         {
             float x = Random.Range(minPosX, maxPosX);
             float y = Random.Range(minPosY, maxPosY);
-            float z = 90 + ((300 / 6) * i);
+            float z = 90 + ((300 / count) * i);
 
             GameObject newPortal = Instantiate(portalPrefab, new Vector3(x, y, z), new Quaternion(1, 0, 0, 1));
             GameObject door = GameObject.CreatePrimitive(PrimitiveType.Sphere);
@@ -53,6 +53,6 @@ public class PortalSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

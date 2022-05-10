@@ -19,12 +19,6 @@ public class AvengerShipSpawnerFight : MonoBehaviour
 
     void Awake()
     {
-        
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
         avengerShipICount = PlayerPrefs.GetInt("avengerShipICount");
         avengerShipIICount = PlayerPrefs.GetInt("avengerShipIICount");
 
@@ -49,7 +43,7 @@ public class AvengerShipSpawnerFight : MonoBehaviour
 
             avengerShipFight.bulletPrefab = bulletPrefab;
             avengerShipFight.leviathanMask = leviathanMask;
-            
+
             obstacleAvoidance.mask = obstacleAvoidance.mask & ~LayerMask.GetMask("Bullet");
             obstacleAvoidance.forwardFeelerDepth = 50f;
             obstacleAvoidance.sideFeelerDepth = 20f;
@@ -87,6 +81,12 @@ public class AvengerShipSpawnerFight : MonoBehaviour
             boid.maxSpeed = 30f;
             boid.maxForce = 40f;
         }
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
     }
 
     // Update is called once per frame

@@ -136,6 +136,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: sanctuaryII Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1668838166916883271, guid: a5cfb4b0cfe022f4abb0e022cfb2a36a,
+        type: 3}
+      propertyPath: m_TagString
+      value: sanctuary
+      objectReference: {fileID: 0}
     - target: {fileID: 2045540039764589053, guid: a5cfb4b0cfe022f4abb0e022cfb2a36a,
         type: 3}
       propertyPath: m_RootOrder

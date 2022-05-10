@@ -335,9 +335,13 @@
 "Assets/Scripts/AvengerShipFight.cs"
 "Assets/Scripts/AvengerShipSpawner.cs"
 "Assets/Scripts/AvengerShipSpawnerFight.cs"
+"Assets/Scripts/AvengerSpawnerFinal.cs"
 "Assets/Scripts/Boid.cs"
 "Assets/Scripts/Bullet.cs"
+"Assets/Scripts/ChargeBullet.cs"
+"Assets/Scripts/ChargeBulletCamera.cs"
 "Assets/Scripts/ClosePortal.cs"
+"Assets/Scripts/EndCamera.cs"
 "Assets/Scripts/Flee.cs"
 "Assets/Scripts/LeviathanFight.cs"
 "Assets/Scripts/LeviathanSpawner.cs"
@@ -360,6 +364,7 @@
 "Assets/Scripts/SpineAnimator.cs"
 "Assets/Scripts/StateMachine.cs"
 "Assets/Scripts/SteeringBehaviour.cs"
+"Assets/Scripts/TriggerExplosion.cs"
 "Assets/Starfield Skybox/Demo/Script/LookCamera.cs"
 -langversion:9.0
 

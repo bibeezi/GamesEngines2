@@ -7,6 +7,7 @@ public class PortalCamera : MonoBehaviour
 {
     public Camera Shipcamera;
     public float speed = 7f; 
+    public GameObject[] portals;
 
     // Use this for initialization
     void Start()
@@ -18,8 +19,10 @@ public class PortalCamera : MonoBehaviour
     void Update()
     {
         transform.position += new Vector3(0, 0, 1) * Time.deltaTime * speed;
+        
+        portals = GameObject.FindGameObjectsWithTag("portal");
 
-        if(transform.position.z > 120)
+        if(portals.Length == 0)
         {
             SceneManager.LoadScene(sceneName: "10FightScene");
         }

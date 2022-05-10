@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/13SanctuaryII.unity
     guid: 2be7a9d6109b0d744aa28ef08b05868c
+  - enabled: 1
+    path: Assets/Scenes/15EndScene.unity
+    guid: 4349108b520d3534897e83c315a85027
   m_configObjects: {}

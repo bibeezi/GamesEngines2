@@ -7,7 +7,6 @@ public class AvengerShipSpawner : MonoBehaviour
     public GameObject avengerShipI;
     public GameObject avengerShipII;
     public GameObject[] portals;
-    public int count = 6;
     GameObject newAvengerShip;
     int avengerShipICount = 0;
     int avengerShipIICount = 0;

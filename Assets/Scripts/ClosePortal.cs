@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ClosePortal : MonoBehaviour
 {
-    public float shrinkSpeed = 5;
+    public float shrinkSpeed = 5f;
     bool shrink = false;
 
     // Start is called before the first frame update
@@ -22,7 +22,7 @@ public class ClosePortal : MonoBehaviour
             transform.parent.localScale = Vector3.Lerp(transform.parent.localScale, Vector3.zero, (shrinkSpeed * Time.deltaTime) / Vector3.Distance(transform.parent.localScale, Vector3.zero));
         }
 
-        if(transform.localScale == Vector3.zero)
+        if(transform.localScale.x < 0.8f)
         {
             Destroy(gameObject);
             Destroy(transform.parent.gameObject);

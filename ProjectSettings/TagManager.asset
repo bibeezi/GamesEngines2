@@ -9,6 +9,8 @@ TagManager:
   - avengershipII
   - leviathan
   - bullet
+  - sanctuary
+  - bulletCharge
   layers:
   - Default
   - TransparentFX

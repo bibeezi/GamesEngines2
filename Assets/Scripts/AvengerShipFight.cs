@@ -11,7 +11,7 @@ public class AvengerShipFight : MonoBehaviour
     GameObject[] leviathans;
     public GameObject seekLeviathan;
     int whichLeviathan;
-    int bullets = 20;
+    int bullets = 7;
     public GameObject bulletPrefab;
     public LayerMask leviathanMask;
 
@@ -28,7 +28,7 @@ public class AvengerShipFight : MonoBehaviour
             if(owner.GetComponent<AvengerShipFight>().leviathans.Length > 0)
             {
                 owner.GetComponent<AvengerShipFight>().whichLeviathan = Random.Range(0, owner.GetComponent<AvengerShipFight>().leviathans.Length);
-                owner.GetComponent<AvengerShipFight>().seekLeviathan = owner.GetComponent<AvengerShipFight>().leviathans[owner.GetComponent<AvengerShipFight>().whichLeviathan].transform.GetChild(0).gameObject;
+                owner.GetComponent<AvengerShipFight>().seekLeviathan = owner.GetComponent<AvengerShipFight>().leviathans[owner.GetComponent<AvengerShipFight>().whichLeviathan].gameObject;
                 owner.GetComponent<AvengerShipFight>().seek.target = owner.GetComponent<AvengerShipFight>().seekLeviathan.transform.position;   
             }
         }
@@ -42,7 +42,7 @@ public class AvengerShipFight : MonoBehaviour
                 if(owner.GetComponent<AvengerShipFight>().leviathans.Length > 0)
                 {
                     owner.GetComponent<AvengerShipFight>().whichLeviathan = Random.Range(0, owner.GetComponent<AvengerShipFight>().leviathans.Length);
-                    owner.GetComponent<AvengerShipFight>().seekLeviathan = owner.GetComponent<AvengerShipFight>().leviathans[owner.GetComponent<AvengerShipFight>().whichLeviathan].transform.GetChild(0).gameObject;
+                    owner.GetComponent<AvengerShipFight>().seekLeviathan = owner.GetComponent<AvengerShipFight>().leviathans[owner.GetComponent<AvengerShipFight>().whichLeviathan].gameObject;
                     owner.GetComponent<AvengerShipFight>().seek.target = owner.GetComponent<AvengerShipFight>().seekLeviathan.transform.position;
                 }
             }
@@ -121,7 +121,8 @@ public class AvengerShipFight : MonoBehaviour
                 if(owner.GetComponent<AvengerShipFight>().leviathans.Length > 0)
                 {
                     owner.GetComponent<AvengerShipFight>().whichLeviathan = Random.Range(0, owner.GetComponent<AvengerShipFight>().leviathans.Length);
-                    owner.GetComponent<AvengerShipFight>().seekLeviathan = owner.GetComponent<AvengerShipFight>().leviathans[owner.GetComponent<AvengerShipFight>().whichLeviathan].transform.GetChild(0).gameObject;
+                    // owner.GetComponent<AvengerShipFight>().seekLeviathan = owner.GetComponent<AvengerShipFight>().leviathans[owner.GetComponent<AvengerShipFight>().whichLeviathan].transform.GetChild(0).gameObject;
+                    owner.GetComponent<AvengerShipFight>().seekLeviathan = owner.GetComponent<AvengerShipFight>().leviathans[owner.GetComponent<AvengerShipFight>().whichLeviathan].gameObject;
                     owner.GetComponent<AvengerShipFight>().seek.target = owner.GetComponent<AvengerShipFight>().seekLeviathan.transform.position;
                 }
             }

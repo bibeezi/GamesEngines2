@@ -15,12 +15,6 @@ public class LeviathanSpawnerFight : MonoBehaviour
 
     void Awake()
     {
-        
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
         // Spawn Leviathan count number of times
         for(int i = 0; i < count; i++)
         {
@@ -30,9 +24,11 @@ public class LeviathanSpawnerFight : MonoBehaviour
 
             GameObject newLeviathan = Instantiate(leviathanPrefab, new Vector3(x, y, z), new Quaternion(0, -1, 0, 1));
 
+            newLeviathan.transform.GetChild(0).gameObject.tag = "leviathan";
+
             LeviathanFight leviathanFight = newLeviathan.transform.GetChild(0).gameObject.AddComponent<LeviathanFight>();
             Boid boid = newLeviathan.transform.GetChild(0).gameObject.GetComponent<Boid>();
-            Pursue pursue = newLeviathan.transform.GetChild(0).gameObject.GetComponent<Pursue>();
+            Pursue pursue = newLeviathan.transform.GetChild(0).gameObject.AddComponent<Pursue>();
             NoiseWander vertical = newLeviathan.transform.GetChild(0).gameObject.AddComponent<NoiseWander>();
             NoiseWander horizontal = newLeviathan.transform.GetChild(0).gameObject.AddComponent<NoiseWander>(); 
      
@@ -59,6 +55,12 @@ public class LeviathanSpawnerFight : MonoBehaviour
 
             pursue.enabled = false;
         }
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
     }
 
     // Update is called once per frame
