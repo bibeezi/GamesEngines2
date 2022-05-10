@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class LeviathanFight : MonoBehaviour
@@ -33,6 +34,10 @@ public class LeviathanFight : MonoBehaviour
             pursueAvengerShip = avengerShips[whichAvengerShip];
             pursue.target = pursueAvengerShip.GetComponent<Boid>();
             pursue.enabled = true;
+        }
+        else if(avengerShips == null)
+        {
+            SceneManager.LoadScene(sceneName: "13SanctuaryII");
         }
 
         Collider[] visibleAvengerShips = Physics.OverlapSphere(transform.position, 100f, avengerShipMask);
@@ -81,18 +86,12 @@ public class LeviathanFight : MonoBehaviour
             {
                 if(leviathan.transform.GetChild(0).GetComponent<LeviathanFight>().pursueAvengerShip == collider.gameObject)
                 {
-                    // avengerShips = FindGameObjectsWithLayer();
-                    // whichAvengerShip = Random.Range(0, avengerShips.Length);
-                    // pursueAvengerShip = avengerShips[whichAvengerShip];
-                    // pursue.target = pursueAvengerShip.GetComponent<Boid>();
-
                     leviathan.transform.GetChild(0).GetComponent<Pursue>().enabled = false;
                     leviathan.transform.GetChild(0).GetComponent<LeviathanFight>().pursueAvengerShip = null;
                     leviathan.transform.GetChild(0).GetComponent<LeviathanFight>().pursue.target = null;
                 }
             }
 
-                // Destroy(collider.gameObject);
             collider.gameObject.layer = 0;
             collider.gameObject.SetActive(false);
         }

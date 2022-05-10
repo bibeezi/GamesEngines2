@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class AvengerShipFight : MonoBehaviour
@@ -10,7 +11,7 @@ public class AvengerShipFight : MonoBehaviour
     GameObject[] leviathans;
     public GameObject seekLeviathan;
     int whichLeviathan;
-    int bullets = 10;
+    int bullets = 20;
     public GameObject bulletPrefab;
     public LayerMask leviathanMask;
 
@@ -150,14 +151,17 @@ public class AvengerShipFight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
+        leviathans = GameObject.FindGameObjectsWithTag("leviathan");
 
-     // Gets the angle of the view for the Editor
-    public Vector3 DirFromAngle(float angleInDegrees, bool angleIsGlobal){
-        if(!angleIsGlobal){
-            angleInDegrees += transform.eulerAngles.y;
+        if(leviathans.Length == 0)
+        {
+            int avengerShipICount = GameObject.FindGameObjectsWithTag("avengershipI").Length;
+            int avengerShipIICount = GameObject.FindGameObjectsWithTag("avengershipII").Length;
+
+            PlayerPrefs.SetInt("avengerShipICount", avengerShipICount);
+            PlayerPrefs.SetInt("avengerShipIICount", avengerShipIICount);
+            
+            SceneManager.LoadScene(sceneName: "13SanctuaryII");
         }
-        return new Vector3(Mathf.Sin(angleInDegrees * Mathf.Deg2Rad), 0, Mathf.Cos(angleInDegrees * Mathf.Deg2Rad));
     }
 }

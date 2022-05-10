@@ -68,7 +68,6 @@
      <Compile Include="Assets\Scripts\LeviathanSpawnerFight.cs" />
      <Compile Include="Assets\Scripts\ShipIArrive.cs" />
      <Compile Include="Assets\Scripts\ShipIBoid.cs" />
-     <Compile Include="Assets\Scripts\AvengerEditor.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

@@ -331,7 +331,6 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/AlphaChange.cs"
 "Assets/Scripts/Arrive.cs"
-"Assets/Scripts/AvengerEditor.cs"
 "Assets/Scripts/AvengerShip.cs"
 "Assets/Scripts/AvengerShipFight.cs"
 "Assets/Scripts/AvengerShipSpawner.cs"
